@@ -1,0 +1,12 @@
+﻿<p>
+    Current Time: @DateTime.Now.ToString("hh:mm:ss")
+</p>
+
+<p>
+    <distributed-cache name="fivercache"
+                       expires-after="@TimeSpan.FromMinutes(1)">
+
+        Cached Time: @DateTime.Now.ToString("hh:mm:ss")
+    </distributed-cache>
+</p>
+
